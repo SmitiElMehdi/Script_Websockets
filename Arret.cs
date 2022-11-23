@@ -9,7 +9,7 @@ public class Function : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ws = new WebSocket("ws://x.x.x.x:1880/ws/Nom_du_noeud_websocket_dans_le_node-red);
+        ws = new WebSocket("ws://x.x.x.x:1880/ws/Nom_du_noeud_websocket_dans_le_node-red");
         ws.Connect();
     }
 
