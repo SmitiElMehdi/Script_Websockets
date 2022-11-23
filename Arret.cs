@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using WebSocketSharp;
 
-public class Arret : MonoBehaviour
+public class Function : MonoBehaviour
 {
     WebSocket ws;
     // Start is called before the first frame update
     void Start()
     {
-        ws = new WebSocket("ws://192.168.10.233:1880/ws/Arret");
+        ws = new WebSocket("ws://x.x.x.x:1880/ws/Nom_du_noeud_websocket_dans_le_node-red);
         ws.Connect();
     }
 
     // Update is called once per frame
-    public void SendArret()
+    public void SendFunction()
     {
         ws.Send("0");
     }
